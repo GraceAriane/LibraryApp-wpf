@@ -1,9 +1,29 @@
 ﻿<Application x:Class="LibraryApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:LibraryApp"
+             xmlns:local="clr-namespace:LibraryApp" 
+             xmlns:vm="clr-namespace:LibraryApp.ViewModels" 
+             xmlns:views="clr-namespace:LibraryApp.Views"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <DataTemplate DataType="{x:Type vm:LoginViewModel}">
+            <views:LoginView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:MainViewModel}">
+            <views:MainView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:DashboardViewModel}">
+            <views:DashboardView />
+        </DataTemplate>
+
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="pack://application:,,,/Ressources/Fonts/#Poppins"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
     </Application.Resources>
 </Application>
