@@ -17,8 +17,10 @@
             <!-- colonne droite (image) -->
         </Grid.ColumnDefinitions>
 
-        <views:MenuView Grid.Column="0" Loaded="MenuView_Loaded"/>
-
+        <Border Padding="5">
+            <views:MenuView Grid.Column="0" Loaded="MenuView_Loaded"/>
+        </Border>
+        
         <Border Grid.Column="1">
             <Grid>
 
