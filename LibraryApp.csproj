@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="Ressources\Assets\ImageLogin.png" />
+    <None Remove="Ressources\Assets\Logout.png" />
+    <None Remove="Ressources\Assets\ppBiblio.png" />
     <None Remove="Ressources\Fonts\Montserrat-Regular.ttf" />
     <None Remove="Ressources\Fonts\Poppins-Regular.ttf" />
   </ItemGroup>
@@ -19,7 +21,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Ressources\Assets\BookSolid.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Assets\ChartLineSolid.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Ressources\Assets\ImageLogin.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Assets\LineLeaningSolid.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Assets\Logout.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Assets\ppBiblio.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Assets\UserRegular.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Ressources\Fonts\Montserrat-Regular.ttf">

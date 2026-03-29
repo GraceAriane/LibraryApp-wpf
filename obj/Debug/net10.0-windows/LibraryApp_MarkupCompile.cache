@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\USER\source\repos\LibraryApp\LibraryApp\App.xaml
-4-425903019
+61814259204
 
-20-200435698
+22949678678
 206-81868862
-MainWindow.xaml;Views\DashboardView.xaml;Views\LoginView.xaml;Views\MainView.xaml;
+Components\MenuButton.xaml;MainWindow.xaml;Views\DashboardView.xaml;Views\LoginView.xaml;Views\MainView.xaml;Views\MenuView.xaml;
 
 False
 

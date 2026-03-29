@@ -4,9 +4,26 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LibraryApp.Views"
+             xmlns:views="clr-namespace:LibraryApp.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Background="white">
+        
+        <!-- Définition des colonnes -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <!-- colonne gauche (contenu) -->
+            <ColumnDefinition Width="3*" />
+            <!-- colonne droite (image) -->
+        </Grid.ColumnDefinitions>
+
+        <views:MenuView Grid.Column="0" Loaded="MenuView_Loaded"/>
+
+        <Border Grid.Column="1">
+            <Grid>
+
+            </Grid>
+        </Border>
+
     </Grid>
 </UserControl>

@@ -22,5 +22,10 @@ namespace LibraryApp.Views
         {
             InitializeComponent();
         }
+
+        private void MenuView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
