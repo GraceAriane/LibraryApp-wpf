@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryApp"
         mc:Ignorable="d"
-        Title="Lima" Height="600" Width="900">
+        Title="Lima" Height="630" Width="900">
     <Grid>
         <ContentControl Content="{Binding CurrentViewModel}"/>
     </Grid>

@@ -24,10 +24,13 @@
             HorizontalAlignment="center"
             VerticalAlignment="center"
             Padding="15"
+            MaxWidth="500"
         >
             
             <Grid
                Height="350"
+                Width="300"
+                MaxWidth="500"
             >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -47,11 +50,15 @@
                 />
                 
                 <TextBlock 
-                    Text="Let's discover how we can help you design workspace for your team" 
-                    FontSize="12" 
+                    Text="Let's discover how we can help you design workspace for your team." 
+                    FontSize="10" 
                     Padding="5"
                     Grid.Row="1"
                     Margin="0,0,0,10"
+                    Width="280"
+                    TextWrapping="Wrap"
+                   
+                    HorizontalAlignment="left"
                 />
                 
                 <StackPanel
@@ -105,16 +112,52 @@
                         Background="#F47631"
                         CornerRadius="15"
                     >
-                        <Button 
-                            Content="Se connecter"
+                        <Button Content="Se connecter"
                             Command="{Binding LoginCommand}"
                             Padding="4"
-                            Foreground="white"
+                            Foreground="White"
                             Background="#F47631"
                             BorderThickness="0"
                             FontSize="12"
                             Margin="5"
-                        />
+                        >
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+
+                                    <!-- Style de base -->
+                                    <Setter Property="Background" Value="#F47631"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+
+                                    <!-- Template personnalisé -->
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border 
+                                                    Background="{TemplateBinding Background}"
+                                                    CornerRadius="15"
+                                                >
+                                                    <ContentPresenter 
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"
+                                                    />
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+
+                                    <!-- Hover personnalisé -->
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#D96528"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+
+                                </Style>
+                            </Button.Style>
+
+                        </Button>
 
                     </Border>
 
