@@ -61,7 +61,7 @@ namespace LibraryApp.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LibraryApp;component/components/menubutton.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LibraryApp;V1.0.0.0;component/components/menubutton.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Components\MenuButton.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
