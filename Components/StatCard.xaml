@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="LibraryApp.Components.StatCard"
+             x:Name="root"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryApp.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Border 
+            Background="{Binding BackgroundColor, ElementName=root}"
+            CornerRadius="10"
+            Padding="10"
+            Margin="5"
+            BorderBrush="White"
+        >
+
+            <StackPanel>
+                <Image 
+                    Source="{Binding Icon, ElementName=root}"
+                    Width="22"
+                    Height="22"
+                    HorizontalAlignment="Left"
+                />
+
+                <TextBlock Text="{Binding Value, ElementName=root}"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Foreground="White"
+                />
+                
+                <TextBlock Text="{Binding Title, ElementName=root}"
+                       Foreground="White"
+                       FontSize="15"
+                />
+
+
+            </StackPanel>
+
+        </Border>
+    </Grid>
+</UserControl>

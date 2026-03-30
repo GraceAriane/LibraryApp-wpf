@@ -5,6 +5,9 @@
     <Compile Update="Components\MenuButton.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\StatCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\DashboardView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,6 +18,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\MenuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

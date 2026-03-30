@@ -4,9 +4,11 @@ using System.Text;
 
 namespace LibraryApp.Models
 {
-    public record UserDto
+    public class UserDto
     {
-        long Id;
-        string Name;
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public DateTime Date { get; set; }
     }
+
 }

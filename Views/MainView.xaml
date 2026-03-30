@@ -20,8 +20,8 @@
         <Border Padding="5">
             <views:MenuView Grid.Column="0" Loaded="MenuView_Loaded"/>
         </Border>
-        
-        <Border Grid.Column="1">
+
+        <Border Grid.Column="1" Background="#F1F5F9">
             <Grid>
 
             </Grid>
